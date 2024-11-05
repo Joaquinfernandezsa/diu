@@ -18,3 +18,5 @@ Corra el proyecto de manera local:
 ```bash
 npm run dev
 ```
+
+Para probar la página tiene que abrir en su navegador la dirección [http://localhost:3000](http://localhost:3000).
