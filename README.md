@@ -3,7 +3,7 @@
 Integrantes:
   - Joaquin Fernandez 201973124-6
   - Cristian Soriano 201954014-9
-  - Nicolas Gomez -- KIKO INSERTA TU ROL --
+  - Nicolas Gomez 202104044-7
 
 ## Instrucciones de ejecución
 
