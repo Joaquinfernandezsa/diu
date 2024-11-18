@@ -8,6 +8,7 @@ const ReportForm = () => {
   const [description, setDescription] = useState('');
   const [location, setLocation] = useState('');
   const [images, setImages] = useState([]);
+  const [time_ocurrance, setTimeOcurrance] = useState('');
   const router = useRouter();
 
   const handleImageUpload = (e) => {
@@ -35,6 +36,19 @@ const ReportForm = () => {
 
       <form onSubmit={handleSubmit} className="bg-white shadow-md rounded-lg p-6 w-full max-w-lg">
         <div className="mb-4">
+          <label htmlFor='category' className='block text-gray-700 font-medium mb-2'>
+            Tipo de denuncia
+          </label>
+
+          <div className='mb-4'>
+            <select className="mt-2 p-2 rounded-lg w-80 border-2 border-gray-300">
+              <option value="" disabled>Seleccionar categoría...</option>
+              <option value="incendio">Incendio</option>
+              <option value="choque">Accidente automovilístico</option>
+              <option value="corte">Corte de luz</option>
+            </select>
+          </div>
+
           <label htmlFor="description" className="block text-gray-700 font-medium mb-2">
             Descripción del problema:
           </label>
@@ -43,9 +57,9 @@ const ReportForm = () => {
             value={description}
             onChange={(e) => setDescription(e.target.value)}
             className="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-orange-500"
-            rows="4"
+            rows={4}
             placeholder="Describe el problema que encontraste..."
-            required
+            
           />
         </div>
 
@@ -60,8 +74,22 @@ const ReportForm = () => {
             onChange={(e) => setLocation(e.target.value)}
             className="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-orange-500"
             placeholder="Ingresa la ubicación"
-            required
+            
           />
+
+
+          <label htmlFor="time_ocurrance" className='block text-gray-700 font-medium mb-2'>
+            ¿A qué hora?
+          </label>
+          <div className="">
+            <input
+              id="time_of_ocurrance"
+              type="time"
+              value={time_ocurrance}
+              onChange={e => setTimeOcurrance(e.target.value)} 
+              className='p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-orange-500'
+            />
+          </div>
         </div>
 
         <div className="mb-6">

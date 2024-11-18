@@ -52,10 +52,7 @@ const MyReports = () => {
             
             <div className="fixed bottom-0 w-full flex justify-around bg-orange-500 p-2 border-t border-gray-300">
                 <button onClick={() => router.push('/user')} className="flex flex-col items-center text-white font-bold">
-                    <span>Inicio</span>
-                </button>
-                <button onClick={() => router.push('/user/otherReports')} className="flex flex-col items-center text-white font-bold">
-                    <span>Denuncias Recientes</span>
+                    <span>Atras</span>
                 </button>
             </div>
         </div>
