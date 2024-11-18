@@ -28,6 +28,7 @@ const ContactPage = () => {
     return (
         <div className="flex flex-col items-center justify-center min-h-screen bg-white">
             <h1 className="text-2xl font-bold text-gray-700 mb-4">Contáctanos</h1>
+            <p className="text-center text-gray-600 mb-8">¡Trataremos de resolver tu caso a la brevedad!</p>
             <form className="w-full max-w-lg bg-white p-6 shadow-lg rounded-lg" onSubmit={handleSubmit}>
                 <div className="mb-4">
                     <label htmlFor="name" className="block text-gray-700 text-sm font-bold mb-2">
