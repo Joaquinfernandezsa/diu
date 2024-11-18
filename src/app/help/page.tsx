@@ -70,7 +70,7 @@ const ContactPage = () => {
                         onChange={handleChange}
                         className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                         placeholder="Escribe tu mensaje aquí"
-                        rows="5"
+                        rows={5}
                         required
                     />
                 </div>
@@ -85,15 +85,11 @@ const ContactPage = () => {
                 </div>
             </form>
 
-            {/* Footer navigation */}
-            <div className="fixed bottom-0 w-full flex justify-around bg-white p-2 border-t border-gray-300">
-                <button onClick={() => router.push('/user')} className="flex flex-col items-center text-gray-500">
-                    <span>Atras</span>
-                </button>
-                <button onClick={() => router.push('/user/reports')} className="flex flex-col items-center text-gray-500">
-                    <span>Denuncias Recientes</span>
-                </button>
-            </div>
+            <div className="fixed bottom-0 w-full flex justify-around bg-orange-500 p-2 border-t border-gray-300">
+            <button onClick={() => router.push('/user')} className="flex flex-col items-center text-white font-bold">
+                <span>Atras</span>
+            </button>
+        </div>
         </div>
     );
 };
